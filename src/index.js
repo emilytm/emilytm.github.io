@@ -21,3 +21,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 const perf = getPerformance(app);
+
+firebase.performance(); // call to activate
+firebase.analytics(); // call to activate
+firebase.analytics().logEvent('page loaded');
